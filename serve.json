@@ -1,0 +1,20 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "directoryListing": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/pricing", "destination": "/pricing/index.html" },
+    { "source": "/data-room", "destination": "/data-room/index.html" },
+    { "source": "/security", "destination": "/security/index.html" },
+    { "source": "/customers", "destination": "/customers/index.html" },
+    { "source": "/blog", "destination": "/blog/index.html" },
+    { "source": "/agents", "destination": "/agents/index.html" },
+    { "source": "/de", "destination": "/de/index.html" },
+    { "source": "/es", "destination": "/es/index.html" },
+    { "source": "/fr", "destination": "/fr/index.html" }
+  ],
+  "redirects": [
+    { "source": "/login", "destination": "http://localhost:3002/login", "type": 302 }
+  ]
+}

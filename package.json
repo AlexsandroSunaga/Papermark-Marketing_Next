@@ -1,0 +1,16 @@
+{
+  "name": "papermark-marketing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "serve public -l 3003 --config serve.json",
+    "build": "node scripts/build-mirror.mjs && node scripts/download-missing-assets.mjs && node scripts/patch-routing.mjs",
+    "mirror": "node scripts/build-mirror.mjs && node scripts/download-missing-assets.mjs && node scripts/patch-routing.mjs",
+    "patch-routing": "node scripts/patch-routing.mjs",
+    "download-assets": "node scripts/download-missing-assets.mjs",
+    "start": "serve public -l 3003 --config serve.json"
+  },
+  "dependencies": {
+    "serve": "^14.2.6"
+  }
+}
